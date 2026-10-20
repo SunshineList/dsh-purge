@@ -61,7 +61,7 @@ check("0.2.1 variables(provider,model) renders without unknown variable", () => 
 
 // A host that does register cwd keeps the real variable.
 check("host with cwd variable keeps {{cwd}}", () => {
-  const vars = { provider: "deepseek", model: "m", cwd: "/Users/yuqma/work" };
+  const vars = { provider: "deepseek", model: "m", cwd: "/tmp/work" };
   const out = rewritePromptAssembly(assembled(vars), "INJECT BODY");
   const joined = out.sections.map((s) => s.text).join("\n");
   assert.match(joined, /\{\{\s*cwd\s*\}\}/, "cwd variable was stripped too aggressively");

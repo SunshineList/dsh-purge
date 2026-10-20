@@ -8,9 +8,9 @@ import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import * as core from "../lib/core.js";
+import { findHost } from "./find-host.mjs";
 
-const HOST = process.env.PURGE_HOST
-  || "/Users/yuqma/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai";
+const HOST = findHost();
 // 用官方快照当"改前"样本：测试必须能在已打补丁的宿主上重复跑。
 const HAS_HOST = fs.existsSync(HOST);
 function pristine(fp) {
