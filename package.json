@@ -1,6 +1,6 @@
 {
   "name": "dsh-purge",
-  "version": "1.1.72-dsh021rc2.4",
+  "version": "1.1.72-dsh021rc2.5",
   "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 已适配 DSH 0.2.1-rc.2（{{cwd}} 变量、#40 锚点、#119 await、#127 closeSync、红队 toolFilter）。",
   "type": "module",
   "main": "lib/index.js",

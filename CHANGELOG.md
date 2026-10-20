@@ -1,4 +1,16 @@
-# dsh-purge `1.1.72-dsh021rc2.4` — DSH 0.2.1-rc.2 适配版
+# dsh-purge `1.1.72-dsh021rc2.5` — DSH 0.2.1-rc.2 适配版
+
+## 1.1.72-dsh021rc2.5
+
+C 端视觉与更新链路收尾：
+
+- **UI 重做**：`PURGE_CSS` 换靛蓝主色、系统无衬线、实心主按钮、更圆卡片与彩色状态 pill；dock / 弹窗 / 授权层统一到同一色板。
+- **清洗页引导**：进度条下增加「下一步」引导条（就绪 / 待写入 / 未定位 / 待解包 / 补丁丢失），一眼知道该点什么。
+- **更新源修正**：`lib/update.js` 的仓库与正式分支从 `YuJunZhiXue/dsh-purge` / `master` 改为 `SunshineList/dsh-purge` / `main`，欢迎页与红队 UI 链接同步。
+- **测试可移植**：新增 `test/find-host.mjs` 自动探测宿主，去掉写死的本机路径；找不到宿主时 skip。
+- **文档**：删除 `README.en.md`，安装源改到本仓库。
+
+---
 
 ## 1.1.72-dsh021rc2.4
 
